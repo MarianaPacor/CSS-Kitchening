@@ -1,0 +1,115 @@
+* {
+    box-sizing:border-box; /* Regra universal */
+}
+body { /* Regras padrão do body e imagem de fundo */
+    padding: 0;
+    margin: 0;
+    background-image: url(../img/bg-body.png);
+    background-attachment: fixed;
+}
+nav ul { 
+    list-style: none; /* Limpa as "bolinhas" da lista */
+    margin:0;
+    padding:0;
+}
+nav ul li {
+    padding: 0 3px; /* Define os espaçamentos entre os links */
+}
+nav ul li a {
+    background-color: rgba(0,0,0,0.7); /* Determina cor de background apenas nos itens */
+    display:inline-block; /* Dispõe em blocos em linhas */
+    width: 100%; /* Define a largura do link como 100% do Li*/
+    padding: 10px 20px; /* Preenchimento */
+    text-align: center; /* Definições do texto */
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+nav ul li a:hover  { /* Definições para quando passamos o mouse sobre os links */
+    color: black;
+    background-color: grey;
+    text-decoration: none;
+}
+.banner { /* Posicionamento e tamanho da imagem do banner */
+    display:block;
+    width: 100%;
+    margin: 20px auto;
+}
+header { /* Centralização do logo */
+    display:flex;
+    justify-content: center;
+}
+.logo { /* Tamanho e borda do logo */
+    width: 13%; 
+    border: 1px solid black;
+    border-radius: 100%;
+    margin: 20px auto;
+}
+.promocao { /* Posicionamento e tamanho da imagem do item promoção */
+    width: 20%;
+    position: absolute;
+    top: -7px;
+    right: 8px;
+}
+div { /* Margem superior entre as linhas dos produtos */
+    margin-top: 15px;
+}
+div img { /* Tamanho da imagem do produto dentro da div */
+    width: 100%;
+}
+div h3 { /*Posicionamento e cor de fundo do texto "ampliar foto" */
+    width: 92.5%;
+    background-color: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 70px;
+    color: white; /* Transformações tipográficas */
+    text-align: center;
+    font-size:14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+div a { /*Cor de fundo, preenchimento e cor do texto do link "ver mais" */
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    padding: 10px;
+}
+div a:hover { /* Definição das transformações quando passamos o mouse em "ver mais" */
+    color: black;
+    background-color: grey;
+    text-decoration: none;
+}
+div p { /* Transformações tipográficas */
+    color: black;
+    font-size: 12px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+div h2 { /* Transformações tipográficas */
+    color: black;
+    font-family: sans-serif;
+}
+div footer { /* Posisionamento, cor de fundo, bordas e margens do rodapé */
+    display: flex; 
+    justify-content: center; /* Centralização dos links no rodapé */
+    background-color: brown;
+    margin-top: 30px;
+    padding: 40px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+div footer a { /* Transformações tipográficas dos links do rodapé */
+    color: white;
+    background-color: brown;
+    padding: 0 10kopx;
+    text-transform: none;
+    text-align:center; /* Centralização do texto dentro dos links */
+    border-right: 1px solid white; /* Borda apenas à direita */
+}
+div footer a:last-child { /* Retirada da borda do último filho */
+    border-right: none; 
+}
+div footer a:hover { /* Definição das transformações quando passamos o mouse nos links */
+    color: white;
+    text-decoration: underline;
+    background-color: brown;
+}
